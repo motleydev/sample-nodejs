@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const { throttle } = require("throttle-debounce");
-
+const app = express();
 // Shhhhh
 const host = (() => {
   return "https://just-husky-37.hasura.app/v1/graphql";
@@ -14,7 +14,6 @@ const client = require("graphql-client")({
 // --------------------------------------------------
 // Give Glitch a kick in case the project hibernates.
 
-const app = express();
 app.use(bodyParser.json());
 
 app.get("/", function (req, res) {
