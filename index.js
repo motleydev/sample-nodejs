@@ -23,7 +23,7 @@ app.get("/", function (req, res) {
 // --------------------------------------------------
 // Config, "error handling", and execution steps
 
-const fps = 0.3; // Good luck
+const fps = 0.5; // Good luck
 
 // This particular demo has to deal with three different problems:
 // - The associated Hasura cloud account has max. 6k reqs/min.
